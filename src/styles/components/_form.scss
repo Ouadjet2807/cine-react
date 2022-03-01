@@ -1,0 +1,81 @@
+.form-component {
+  .form-container {
+    text-align: center;
+  }
+  form {
+    width: 400px;
+    margin: 0 auto;
+
+    input[type="text"] {
+      font-family: $font-2;
+      padding: 1px 10px;
+      border-radius: 5px 5px 0 0;
+      border: none;
+      font-size: 1.5rem;
+      display: block;
+      margin: 0 auto;
+      width: 320px;
+      outline: none;
+      text-align: center;
+    }
+    input[type="submit"] {
+      font-family: $font-2;
+      padding: 1px 10px;
+      width: 320px;
+      border-radius: 0 0 5px 5px;
+      border: none;
+      background: $black;
+      color: $white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 10;
+      position: relative;
+      transition: 0.3s ease-in;
+
+      &:hover {
+        background: $yellow;
+        color: $color-3;
+      }
+    }
+  }
+  .btn-sort-container {
+    margin: 8px auto;
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+
+    #goodToBad {
+      border-radius: 5px 0 0 5px;
+    }
+    #badToGood {
+      border-radius: 0 5px 5px 0;
+    }
+    #goodToBad,
+    #badToGood {
+      font-family: $font-2;
+      background: $black;
+      width: 210px;
+      position: relative;
+      transition: 0.3s ease-in;
+
+      &:hover {
+        background: $yellow;
+        color: $color-3;
+      }
+    }
+    #goodToBad span {
+      transform: translateY(-50%) rotate(-90deg);
+      right: 18px;
+    }
+    #badToGood span {
+      transform: translateY(-50%) rotate(90deg);
+      left: 16px;
+    }
+    #goodToBad span,
+    #badToGood span {
+      position: absolute;
+      top: 50%;
+    }
+  }
+}

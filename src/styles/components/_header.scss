@@ -1,0 +1,52 @@
+.header {
+  h1 {
+    font-size: 3.3rem;
+    font-family: $font-1;
+    color: $yellow;
+    text-shadow: 2px 3px 0px $color-3;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  nav {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 1.1rem;
+
+    ul {
+      display: flex;
+
+      a {
+        padding: 5px;
+        font-family: $font-2;
+        text-decoration: none;
+        color: $white;
+        border-radius: 15px;
+        width: 150px;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        margin-right: 5px;
+        transition: 0.3s ease-in;
+
+        &:visited {
+          text-decoration: none;
+          color: $white;
+        }
+        &:hover {
+          background: $black;
+          color: $yellow;
+        }
+      }
+      a.nav-active {
+        background: $yellow;
+        color: $color-3;
+
+        &:hover {
+          background: $black;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

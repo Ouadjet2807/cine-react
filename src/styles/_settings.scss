@@ -1,0 +1,88 @@
+
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/unicode.aachenb.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../assets/fonts/benguiat-bold.ttf);
+}
+@font-face {
+  font-family: "font-3";
+  src: url(../assets/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "font-4";
+  src: url(../assets/fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "font-5";
+  src: url(../assets/fonts/Lato-LightItalic.ttf);
+}
+@font-face {
+  font-family: "font-6";
+  src: url(../assets/fonts/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: "font-6";
+  src: url(../assets/fonts/Lato-Thin.ttf);
+}
+@font-face {
+  font-family: "font-7";
+  src: url(../assets/fonts/Lato-ThinItalic.ttf);
+}
+@font-face {
+  font-family: "font-8";
+  src: url(../assets/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: "font-9";
+  src: url(../assets/fonts/Lato-BlackItalic.ttf);
+}
+@font-face {
+  font-family: "font-10";
+  src: url(../assets/fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "font-11";
+  src: url(../assets/fonts/Lato-BoldItalic.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", sans-serif;
+$font-3: "font-3", sans-serif;
+$font-4: "font-4", sans-serif;
+$font-5: "font-5", sans-serif;
+$font-6: "font-6", sans-serif;
+$font-7: "font-7", sans-serif;
+$font-8: "font-8", sans-serif;
+$font-9: "font-9", sans-serif;
+$font-10: "font-10", sans-serif;
+$font-11: "font-11", sans-serif;
+
+
+$color-1: #9c6449;
+$color-2: #0f0f0f;
+$color-3: #c60800;
+$yellow: #fbb201;
+$black: #050505;
+$white: rgb(238, 238, 238);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-2;
+  color: $white;
+}
+li {
+  list-style: none;
+}
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
